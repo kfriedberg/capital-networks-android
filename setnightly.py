@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from selenium.common.exceptions import *
 import time
-import sys
 
 logfile_name = "setlog-" + time.strftime("%Y%m%d%H%M%S") + ".txt"
 
