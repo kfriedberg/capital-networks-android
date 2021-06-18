@@ -29,6 +29,7 @@ with open("sites.txt") as sites, open(logfile_name, "a") as logfile, Chrome() as
                 print("Setting reboot")
                 print("Setting reboot", file = logfile)
                 daily_type.select_by_value("reboot")
+                # driver.find_element(By.XPATH, "//input[@type='submit' and @value='Save']").click()
             time.sleep(3)
         except TimeoutException:
             print("Site took too long to load, could be down")
