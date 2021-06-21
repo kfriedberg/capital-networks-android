@@ -40,6 +40,9 @@ with open("sites.txt") as sites, open(logfile_name, "a") as logfile, Chrome() as
             if "ERR_NAME_NOT_RESOLVED" in ex.msg:
                 print("Site name does not resolve in DNS")
                 print("Site name does not resolve in DNS", file = logfile)
+            elif "ERR_CONNECTION_REFUSED" in ex.msg:
+                print("Connection refused, web interface could be down")
+                print("Connection refused, web interface could be down", file = logfile)
             else:
                 raise
                 
