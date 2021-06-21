@@ -19,7 +19,7 @@ and copy it to this folder
   * Put the password as the second line of the file
 
 * Create a file called `sites.txt`
-  * Put the FQDN of each player you want to set/check, one per line
+  * Put the FQDN or IP of each player you want to set/check, one per line
 
 * Run `python checknightly.py` to check the nightly restart status of each player in the sites.txt file.
   * Results will be written to the file `checklog-(date and time).txt` and output to the console
