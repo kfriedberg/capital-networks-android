@@ -12,7 +12,7 @@ with open("credentials.txt") as credentials:
 
 with open("sites.txt") as sites, open(logfile_name, "a") as logfile, Chrome() as driver:
     print("Logging to " + logfile_name)
-    driver.set_page_load_timeout(5)
+    driver.set_page_load_timeout(10)
     for site in sites:
         site = site.strip()
         print(site, end = '\t')
@@ -20,7 +20,7 @@ with open("sites.txt") as sites, open(logfile_name, "a") as logfile, Chrome() as
         try:
             driver.get("http://" + username + ":" + password + "@" + site + ":9000/settings")
             daily_type = Select(driver.find_element(By.NAME, "daily_type"))
-            daily_type_text = daily_type.first_selected_option.get_attribute("value")
+            daily_type_text = daily_type.first_selected_option.get_attribute("text")
             print(daily_type_text)
             print(daily_type_text, file = logfile)
         except TimeoutException:
@@ -34,6 +34,5 @@ with open("sites.txt") as sites, open(logfile_name, "a") as logfile, Chrome() as
                 print("Site name does not resolve in DNS")
                 print("Site name does not resolve in DNS", file = logfile)
             else:
-                print("Other WebDriverException occurred, see console for details", file = logfile)
                 raise
                 
