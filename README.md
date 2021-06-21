@@ -1,7 +1,7 @@
 # emds-nightly-reboot
 Bulk actions on Capital Networks Android based signage players.  Current actions are
-* Get nightly restart/reboot behaviour `checknightly.py`
-* Set a nightly reboot `setnightly.py`
+* `checknightly.py` Get nightly restart/reboot behaviour
+*  `setnightly.py` Set a nightly reboot `setnightly.py`
 
 ## Windows Setup
 * (In command prompt) run `python`  
