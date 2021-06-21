@@ -1,4 +1,4 @@
-# emds-nightly-reboot
+# capital-networks-android
 Bulk actions on Capital Networks Android based signage players.  Current actions are
 * `checknightly.py` Get nightly restart/reboot behaviour
 *  `setnightly.py` Set a nightly reboot
