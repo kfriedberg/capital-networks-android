@@ -5,7 +5,8 @@ Bulk actions on Capital Networks Android based signage players.  Current actions
 
 ## Windows Setup
 * (In command prompt) run `python`  
-If you don't already have python installed, you'll be taken to the Windows Store to install it
+If you don't already have python installed, you'll be taken to the Windows Store to install it  
+If you do have python installed you'll get the `>>>` python prompt.  `quit()` back to the command prompt
 
 * Run `pip install -U selenium`
 
