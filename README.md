@@ -12,7 +12,7 @@ If you do have python installed you'll get the `>>>` python prompt.  `quit()` ba
 
 * Download the ChromeDriver that matches the version of Chrome installed on your computer from  
 https://sites.google.com/a/chromium.org/chromedriver/downloads  
-and copy it to this folder
+and copy it to this folder.  You will likely need a new version of this file every time Chrome updates.
 
 * Create a file called `credentials.txt`
   * Put the username as the first line of the file
